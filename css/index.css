@@ -120,6 +120,24 @@ img {
     border-color: transparent;
 }
 
+.btn-secondary{
+    display: inline-block;
+    background: transparent;
+    color: var(--color-black);
+    padding: 0.6rem 2rem;
+    border: 2px solid #E03A3C;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--color-danger);
+    border-color: transparent;
+}
+
 
 
 /* ============= NAVBAR ============= */
@@ -267,6 +285,21 @@ header {
     color: var(--color-bg1);
 }
 
+.filters{
+    margin-bottom: 2rem;
+    display: flex;
+    align-self: center;
+    place-items: center;
+    justify-content: center;
+}
+
+.filters button{
+    justify-content: center;
+    margin: 10px;
+    align-self: center;
+    align-items: center;
+}
+
 .service__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -280,6 +313,10 @@ header {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+}
+
+.filtered{
+    display: none;
 }
 
 .service__member-image {
