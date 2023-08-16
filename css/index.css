@@ -654,3 +654,292 @@ footer ul li a:hover{
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============= MEDIA QUERIES(TABLET) ============= */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    /* ========== NAVBAR ========== */
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-bg);
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav__menu li{
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav__menu li:nth-child(2){
+        animation-delay: 200ms;
+    }
+
+    .nav__menu li:nth-child(3){
+        animation-delay: 400ms;
+    }
+
+    .nav__menu li:nth-child(4){
+        animation-delay: 600ms;
+    }
+
+    @keyframes animateNavItems {
+        0%{
+           transform: rotateZ(-90deg);    
+        }
+
+        100%{
+            transform: rotateZ(0);     
+            opacity: 1;
+        }
+    }
+
+    .nav__menu li a{
+        background: var(--color-white);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav__menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+
+
+    /* ========== HEADER ========== */
+    header{
+        height: 56vh;
+        margin-bottom: 4rem;
+    }
+
+    .header__container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    .header__left h1{
+        font-size: 2.2rem;
+    }
+    
+    .header__left p{
+        margin: 1rem 0 2rem;
+        font-size: 1rem;
+    }
+
+
+    /* ========== CATEGORIES ========== */
+    .categories{
+        height: auto;
+    }
+
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left{
+        margin-right: 0;
+    }
+
+
+
+    /* =========== OUR SERVICES =========== */
+    .service__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+
+
+    /* =========== OUR TEAM =========== */
+    .team__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .team__member{
+        height: auto;
+    }
+
+    /* =========== CONTACTS =========== */
+    .contact{
+        padding-bottom: 0;
+    }
+
+    .contact__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact__form{
+        align-self: center;
+        margin-right: 0;
+    }
+
+
+
+    /* ========== FOOTER ========== */
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+/* ============= MEDIA QUERIES(PHONE) ============= */
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    /* ========== NAVBAR ========== */
+    .nav__menu{
+        right: 3%;
+    }
+
+    /* ========== HEADER ========== */
+    header{
+        height: 100vh;
+        margin-bottom: 1rem;
+    }
+
+    .header__container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .header__left h1{
+        font-size: 2rem;
+    }
+    
+    .header__left p{
+        margin: 1rem 0 2rem;
+        font-size: 1rem;
+    }
+
+
+    /* ========== CATEGORIES ========== */
+    .categories__right{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category{
+        padding: 1rem;
+    }
+
+    .category__icon{
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+    /* =========== OUR SERVICES =========== */
+    .service__container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    /* ============= TESTIMONIALS ============= */
+    .testimonial{
+        padding-top: 2rem;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .testimonial__body p{
+        color: #1b1b1b;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer__container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer__1 p{
+        margin: 1rem auto;
+    }
+
+    .footer__socials{
+        justify-content: center;
+    }
+}
