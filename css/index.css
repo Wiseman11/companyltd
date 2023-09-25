@@ -225,7 +225,7 @@ header {
 /* ============= CATEGORIES ============= */
 .categories {
     background: var(--color-bg);
-    height: 32rem;
+    height: 35rem;
 }
 
 .categories h1 {
@@ -332,25 +332,27 @@ header {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--color-white);
-    text-align: left;
+    text-align: center;
     opacity: 0;
     transition: var(--transition);
 }
 
-.service__member-info h4 {
+.service__member-info a {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    font-size: 3rem;
+    font-family: sans-serif;
+    bottom: 25%;
+    left: 33%;
     margin: 10px;
     margin-bottom: 35px;
 }
 
-.service__member-info p {
+/*.service__member-info p {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 40%;
+    left: 35%;
     margin: 10px;
-}
+}*/
 
 .service__member:is(:hover, :focus-within) .service__member-image {
     transform: scale(1.09);
@@ -388,7 +390,7 @@ header {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    height: 22rem;
+    height: 23rem;
 }
 
 .team__member-image {
